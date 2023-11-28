@@ -12,7 +12,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const mongoose_1 = require("mongoose");
 function connectDB() {
     return __awaiter(this, void 0, void 0, function* () {
-        const dbURI = process.env.MONGO_URI || '';
+        const dbURI = process.env.MONGO_URI;
         try {
             yield (0, mongoose_1.connect)(dbURI);
             console.log('MongoDB connected');
